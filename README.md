@@ -1,6 +1,20 @@
-# Tic Tac Toe Server
+# Server for the game project
 
-This is a server for playing a multiplayer Tic Tac Toe game. 
+Build the multiplayer game with SocketIO
+
+## My goals were:
+
+Learning Goals:
+
+* Learn about and work with real-time data for the better players experience
+* Try Websockets 
+* Connect a frontend (React/Redux) with a backend (NodeJS)
+* Get more comfortable with Redux
+
+Link to the frontend:
+
+[Frontend](https://github.com/oksmelnik/melody)
+
 
 It has these endpoints:
 
@@ -10,13 +24,6 @@ It has these endpoints:
 * `POST /games/:id/players`: join an existing game
 * `PATCH /games/:id`: update an existing game
 * `GET /games`: list all games
+* `GET /games/:id`: one game
 * `GET /users`: list all users
 
-## Running
-
-* You need a working Postgres database that is preferrably empty (drop all the tables) and running 
-* Install the dependencies using `yarn install`
-* Compile the app (Typescript > Javascript) using `yarn compile` (during development you can use `yarn watch`)
-* `yarn start`
-
-You can run the tests with `yarn test`. Currently they only cover the game logic. 
